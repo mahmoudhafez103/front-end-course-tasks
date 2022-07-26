@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            color: blue;
+        }
+        
+        section p {
+            color: red;
+        }
+        
+        section+p {
+            color: yellow;
+        }
+        
+        .b {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="a">this is child of section</p>
+        <div>
+            <p>this is child of div ,and descendant of section</p>
+        </div>
+        <div>
+            <p>this is child of div ,and descendant of section</p>
+        </div>
+    </section>
+    <p>this is first p after the section</p>
+    <p class="b">this is second p after the section</p>
+    <p class="b">this is third p after the section</p>
+</body>
+
+</html>
